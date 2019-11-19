@@ -3,7 +3,7 @@ import './App.css';
 import timelineData from './data/timeline.json';
 
 import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent';
+import events from './data/timeline.json'
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
         </header>
         <main className="App-main">
         </main>
-        <TimelineEvent person="Becca" status="Birthday!" timestamp="May 25, 1984"/>
+        <Timeline events={events.events}/>
       </div>
     );
   }
